@@ -1,3 +1,6 @@
+---
+output: pdf_document
+---
 # report.md
 ---
 title: "HW 1, CS 625, Fall 2021"
@@ -91,7 +94,7 @@ print s
 1. (Q2) *How many rows are in mpg? How many columns?*
 
 dim(mtcars)
-32 11
+234 11
 
 
 1. (Q4) *Make a scatterplot of hwy vs cyl.*
@@ -149,15 +152,15 @@ https://colab.research.google.com/drive/1BPsadF-9uhV7Ns__ucojvZaBkeobIHPt?usp=sh
 
 1. *In the "New York City weather forecast" section, try replacing `Forecast: detailedForecast` with `Forecast: shortForecast`. Then press the blue play button  or use Shift-Return to run your change. What happens?*
      
-     What I observed was that before I plessed the blue play button there was a lot of detailed about the weather information and as soon I pressed the blue button it gave me a dense version or a shorten verion of it with just he important points.
+     What I observed was that before I pleased the blue play button there was a lot of detail about the weather information and as soon I pressed the blue button it gave me a dense version or a shorten verion of it with just the important points.
 
 1. *Under the scatterplot of temperature vs. name, try replacing `markCircle()` with `markSquare()`. Then press the blue play button  or use Shift-Return to run your change. What happens? How about `markPoint()`?*
      
-     As soon as we change `markCircle()` with `markSquare()` wee see the point that were circle on the scattered plot have now became into squares. As for when  we change it to  `markPoint()` this represents the pixel area of the mark and changes it to default whcih is a circle.
+     As soon as we change `markCircle()` with `markSquare()` we see the point that were circle on the scattered plot have now became into squares. As for when  we change it to  `markPoint()` this represents the pixel area of the mark and changes it to default which is a circle.
 
 1. *Under "Pick a location, see the weather forecast", pick a location on the map.  Where was the point you picked near?*
      
-     Looks like I picked a place near "Four Oaks, NC". hNow, the data is howing me the weatherStation’s forecast URL to retrieve the current forecast for Four Oaks, NC. 
+     Looks like I picked a place near "Four Oaks, NC". Now, the data is showing me the weatherStation’s forecast URL to retrieve the current forecast for Four Oaks, NC. 
 
 1. *The last visualization on this page is a "fancy" weather chart embedded from another notebook.  Click on the 3 dots next to that chart and choose 'Download PNG'.  Insert the PNG into your report.*
      
@@ -168,26 +171,34 @@ https://colab.research.google.com/drive/1BPsadF-9uhV7Ns__ucojvZaBkeobIHPt?usp=sh
 `markCircle()`
 
 1. *Pass an option of `{ size: 200 }` to `markCircle()`.*
+ When I do the size of the markCircle(200) it just makes the point on the chart bigger.
 1. *Try `markSquare` instead of `markCircle`.*
+When I change the markCircle to markSquare it chages the scatterplot point on the graph from circle to square.
 1. *Try `markPoint({ shape: 'diamond' })`.*
-
+It changes the shape of the point on the graph from square to diamond shaped.
 `vl.x().fieldQ("Horsepower")`, ...
 
 1. *Change `Horsepower` to `Acceleration`*
+It shifts the graph to the right hand side with the scattered plot shiftting its points.
 1. *Swap what fields are displayed on the x- and y-axis*
+It shifted the X and the y axis on the graph.
 
 `vl.tooltip().fieldN("Name")`
 
 1. *Change `Name` to `Origin`.*
+It did not change anything for me.
 
 Another example, `count()`
 
 1. *Remove the `vl.y().fieldN("Origin")` line.*
+It turned the graph into a singal bar line that extends to 400.
 1. *Replace `count()` with `average("Miles_per_Gallon")`.*
+I see average gas mileage by country.
 
 ## References
 
 *Every report must list the references that you consulted while completing the assignment. If you consulted a webpage, you must include the URL.*
 
-* Insert Reference 1, https://www.example.com
-* Insert Reference 2, https://www.example.com/reallyreallyreally-extra-long-URI/
+* Insert Reference 1, https://observablehq.com/@observablehq/vega-lite
+* Insert Reference 2, https://colab.research.google.com/drive/1XTBPU9RnwjcWnzHXIXtDlxLj8Uxxbccu?usp=sharing
+* Insert Reference 3, https://colab.research.google.com/drive/1BPsadF-9uhV7Ns__ucojvZaBkeobIHPt?usp=sharing
